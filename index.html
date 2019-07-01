@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover"><link rel=icon href=/favicon.ico><link rel=stylesheet href=https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.css><title>首页</title><style>[v-cloak] {
+            display: none;
+        }
+
+        * {
+
+            /* 慎用 使用后会造成icon与文字不在同一水平线中心上 */
+            /*vertical-align: middle;*/
+
+            border: 0;
+            padding: 0;
+            margin: 0;
+
+            /* 当你设置一个元素为 box-sizing: border-box; 时，此元素的内边距和边框不再会增加它的宽度。 */
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+            /* 去除移动端点击事件出现的背景框 */
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+            /*强制英文单词断行*/
+            word-break: break-all;
+        }
+
+        body {
+            background-color: #F8F8F8;
+            font-family: Roboto, 'Avenir', Helvetica, Arial, sans-serif;
+            /*-webkit-font-smoothing: antialiased;*/
+            /*-moz-osx-font-smoothing: grayscale;*/
+            color: #2c3e50;
+            padding-bottom: 120px;
+        }</style><script>// 输入框只能输入数字与小数
+      // <input onkeyup="clearNoNum(this)">
+      function clearNoNum(obj) {
+
+        // 先把非数字的都替换掉，除了数字和.
+        obj.value = obj.value.replace(/[^\d.]/g, '');
+
+        // 必须保证第一个为数字而不是.
+        obj.value = obj.value.replace(/^\./g, '');
+
+        // 保证只有出现一个.而没有多个.
+        obj.value = obj.value.replace(/\.{2,}/g, '.');
+
+        // 保证.只出现一次，而不能出现两次以上
+        obj.value = obj.value.replace('.', '$#$').replace(/\./g, '').replace('$#$', '.');
+      }</script><link href=/js/chunk-2d0ae607.d1733a15.js rel=prefetch><link href=/js/chunk-2d208488.13305010.js rel=prefetch><link href=/js/chunk-2d2086b7.c2f9b3f8.js rel=prefetch><link href=/js/chunk-2d22d746.b3172083.js rel=prefetch><link href=/js/chunk-5297bf1a.103e6393.js rel=prefetch><link href=/css/app.ba3ae722.css rel=preload as=style><link href=/css/chunk-vendors.666dba70.css rel=preload as=style><link href=/js/app.a9dc9281.js rel=preload as=script><link href=/js/chunk-vendors.de95f94e.js rel=preload as=script><link href=/css/chunk-vendors.666dba70.css rel=stylesheet><link href=/css/app.ba3ae722.css rel=stylesheet></head><body><noscript><strong>We're sorry but App doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=/js/chunk-vendors.de95f94e.js></script><script src=/js/app.a9dc9281.js></script></body></html>
